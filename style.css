@@ -1,0 +1,66 @@
+body {
+  background-color: #000;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#game-container {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-direction: column; /* Susun item secara vertikal */
+  align-items: center; /* Pusat item secara horizontal */
+  justify-content: center; /* Pusat item secara vertikal */
+}
+
+.key {
+  background-color: #333;
+  border: 1px solid #666;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.key:hover {
+  background-color: #444;
+}
+
+#hasil {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0f0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+#hasil1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0f0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+#button {
+  background-color: aqua;
+  color: #000;
+}
+/* Efek Glitch (opsional) */
+#game-container,
+#hasil #hasil1 {
+  animation: glitch 2s linear infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

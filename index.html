@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Tebak Angka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Game Tebak Angka</h1>
+    <div id="game-container">
+      <p id="judul">Tebak angka antara 1 dan 10:</p>
+      <div id="keypad">
+        <button class="key" onclick="tambahAngka('1')">1</button>
+        <button class="key" onclick="tambahAngka('2')">2</button>
+        <button class="key" onclick="tambahAngka('3')">3</button>
+        <br />
+        <button class="key" onclick="tambahAngka('4')">4</button>
+        <button class="key" onclick="tambahAngka('5')">5</button>
+        <button class="key" onclick="tambahAngka('6')">6</button>
+        <br />
+        <button class="key" onclick="tambahAngka('7')">7</button>
+        <button class="key" onclick="tambahAngka('8')">8</button>
+        <button class="key" onclick="tambahAngka('9')">9</button>
+        <br />
+        <button class="key" onclick="tambahAngka('0')">0</button>
+        <button class="key" onclick="clearTebakan()">C</button>
+        <button class="key" onclick="periksaTebakan()">Enter</button>
+      </div>
+      <p id="hasil1"></p>
+      <p id="hasil"></p>
+      <p id="tombol" class="key" onclick="refreshPage()">refresh</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
